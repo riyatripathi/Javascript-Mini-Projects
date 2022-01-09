@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="calculator.js" defer></script>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<style type="text/css">
+	.result{
+		top: 50%;
+		text-align: right;
+		font-weight: bold;
+		font-size: 150%;
+	}
+	.celsi{
+		border:1px solid black;
+    	text-align:center;
+		background-color: #f2f5fb;
+    	padding: 15px;
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		-ms-transform: translateX(-50%) translateY(-50%);
+  		-webkit-transform: translate(-50%,-50%);
+  		transform: translate(-50%,-50%);
+	}
+	.btn{
+		width:70px;
+		display: inline-block;
+		/*border:1px solid black;*/
+	}
+</style>
+<body>
+	<h1 style="text-align: center;background-color: #bdbda6;font-weight: bold;">CALCULATOR</h1>
+
+	<div class="input-group mb-3">
+	  <input type="text" value="" class="form-control result" aria-label="Recipient's username" placeholder="0" aria-describedby="button-addon2" disabled>
+	</div>
+
+	<!-- 1/x  x2  underootx   divide -->
+	<div class="celsi">
+	<div class="input-group mb-3">
+	  <button class="btn btn-outline-secondary onebyx" type="button">1/x</button>
+	  <button class="btn btn-outline-secondary xsqr" type="button">x²</button>
+	  <button class="btn btn-outline-secondary underootx" type="button">x½</button>
+	  <button class="btn btn-outline-secondary C" type="button">C</button>
+	</div>
+
+	<div class="input-group mb-3">
+	  <button class="btn btn-outline-secondary seven" type="button">7</button>
+	  <button class="btn btn-outline-secondary eight" type="button">8</button>
+	  <button class="btn btn-outline-secondary nine" type="button">9</button>
+	  <button class="btn btn-outline-secondary multiply" type="button">x</button>
+	</div>
+	<div class="input-group mb-3">
+	  <button class="btn btn-outline-secondary four" type="button">4</button>
+	  <button class="btn btn-outline-secondary five" type="button">5</button>
+	  <button class="btn btn-outline-secondary six" type="button">6</button>
+	  <button class="btn btn-outline-secondary subtract" type="button">-</button>
+	</div>
+	<div class="input-group mb-3">
+	  <button class="btn btn-outline-secondary one" type="button">1</button>
+	  <button class="btn btn-outline-secondary two" type="button">2</button>
+	  <button class="btn btn-outline-secondary three" type="button">3</button>
+	  <button class="btn btn-outline-secondary add" type="button">+</button>
+	</div>
+	<div class="input-group mb-3">
+	  <button class="btn btn-outline-secondary negate" type="button">+/-</button>
+	  <button class="btn btn-outline-secondary zero" type="button">0</button>
+	  <button class="btn btn-outline-secondary decimal" type="button">.</button>
+	  <button class="btn btn-outline-secondary equal" type="button">=</button>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="passport.js" defer></script>
+</head>
+<style>
+
+	.display{
+		background-color: red;
+	}
+</style>
+<body>
+	<div class="divv">
+		<h1>PASSWORD GENERATOR</h1><br>
+		<div class="display"></div>
+		<label>Password Length </label>
+		<input type="number" name="len" class="len" min="1" max="10" value=""><br>
+		<input type="checkbox" name="up" class="up">INLUDE UPPERCASE LETTERS<br>
+		<input type="checkbox" name="lo" class="lo">INCLUDE LOWERCASE LETTERS<br>
+		<input type="checkbox" name="num" class="num">INCLUDE NUMBERS<br>
+		<input type="checkbox" name="sym" class="sym">INCLUDE SYMBOLS<br><br>
+	</div>
+	<button class="button">FIND</button>
+	<button id="reset" class="reset">RESET</button>
+</body>
+</html>

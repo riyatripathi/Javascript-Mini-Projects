@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>API</title>
+
+	<script type="text/javascript" src="API.js" defer></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous" defer></script>
+</head>
+<style>
+  .head{
+    text-align: center;
+  }
+  .container {
+    position : absolute;    
+    width    : 200px;
+    height   : 200px;
+    left     : 45%;
+    top      : 30%;
+    margin-left : -100px; /* half of the width  */
+    margin-top  : -100px; /* half of the height */
+  }
+
+</style>
+<body>
+  <h1 class="head">WEATHER FORECASTING</h1>
+	<div class="container">
+     <div class="card" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1470102008679-243edbe1039a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNDQ1NjQ0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" class="card-img-top" alt="..." width="200" height="200">
+    <div class="card-body">
+      <input class="input" type="text" name="" id="" placeholder="ENTER CITY">
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="temp list-group-item">TEMPERATURE:</li>
+      <li class="minmax list-group-item">MIN_TEMP: , MAX_TEMP:</li>
+      <li class="main list-group-item">DISCRIPTION:</li>
+    </ul>
+    <div class="card-body">
+      <button class="find">FIND</button>
+    </div>
+  </div> 
+  </div>
+</body>
+</html>
